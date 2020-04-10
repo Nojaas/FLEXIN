@@ -1,5 +1,6 @@
 @mixin small {
   @media (min-width: 414px) {
+
     @content;
   }
 }
@@ -13,3 +14,19 @@
     @content;
   }
 }
+
+@font-face {
+  font-family: "Rambla";
+  src: url("../assets/fonts/rambla_regular.woff") format("woff"),
+    url("../assets/fonts/rambla_regular.woff2") format("woff2");
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66%);
+  }
+}
+
+$Primary-color: #01091a;
+
+$Primary-font: "Rambla";

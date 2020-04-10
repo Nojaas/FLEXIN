@@ -126,3 +126,67 @@ main {
     }
   }
 }
+
+.home__top10{
+    .top10__title{
+    font-size: 18px;
+    }
+    .top10__img{
+        display: flex;
+        flex-wrap: nowrap;
+            img{
+            width: 118px;
+            height: 172px;
+            }
+        }
+    }
+
+
+
+.home__tendency{
+    .tendency__title{
+    font-size: 18px;
+    }
+    .tendency__img{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+            img{
+            width: 118px;
+            height: 172px;
+        }
+    }
+}
+
+
+.home__originals{
+    .originals__title{
+    font-size: 18px;
+    }
+    .originals__img{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+            img{
+            width: 230px;
+            height: 260px;
+        }
+    }
+}
+
+
+.home__mustsee{
+    .mustsee__title{
+    font-size: 18px;
+    }
+    .mustsee__img{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+            img{
+            width: 118px;
+            height: 172px;
+            
+        }
+    }
+}
