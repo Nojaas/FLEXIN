@@ -1,0 +1,28 @@
+body {
+  background-color: $Primary-color;
+  font-family: $Primary-font;
+  color: white;
+}
+
+.Landing__page {
+  &__scroll {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+    animation: moveSlideshow 5s linear infinite;
+    opacity: 50%;
+
+    &__row,
+    &__secondrow {
+      display: flex;
+
+      &__img {
+        width: 125px;
+        height: 182px;
+        margin: 5px;
+      }
+    }
+  }
+}
