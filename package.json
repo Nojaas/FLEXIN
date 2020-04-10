@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/screens/landing.html",
+    "dev": "parcel src/screens/home.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -21,8 +21,5 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
-  },
-  "dependencies": {
-    "plyr": "^3.5.10"
   }
 }
