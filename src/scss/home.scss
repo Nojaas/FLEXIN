@@ -141,6 +141,8 @@ main {
     }
   }
 
+/* ---- Section Emmy ----*/
+
   .home__top10 {
     margin-left: 10px;
     margin-bottom: 20px;
@@ -155,9 +157,14 @@ main {
     .top10__img {
       display: flex;
       flex-wrap: nowrap;
+      h2{
+        font-family: "Doctor-Glitch";
+        font-size: 100px;
+        color: #A0A0A0;
+        opacity: 55%;
+      }
       img {
         height: 170px;
-
         padding-right: 10px;
       }
     }
@@ -177,7 +184,6 @@ main {
     .tendency__img {
       display: flex;
       flex-wrap: nowrap;
-
       img {
         height: 170px;
         padding-right: 10px;
@@ -200,8 +206,7 @@ main {
       display: flex;
       flex-wrap: nowrap;
       img {
-        width: 230px;
-        height: 260px;
+        height: 200px;
         padding-right: 10px;
       }
     }
