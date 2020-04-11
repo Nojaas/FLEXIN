@@ -9,9 +9,27 @@
   }
 }
 @mixin large {
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     @content;
   }
+}
+
+@font-face {
+  font-family: "Rambla";
+  src: url("../assets/fonts/rambla_regular.woff") format("woff"),
+    url("../assets/fonts/rambla_regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rambla-bold";
+  src: url("../assets/fonts/ramba_bold.woff") format("woff"),
+    url("../assets/fonts/rambla_bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ikaros";
+  src: url("../assets/fonts/ikaros_regular.woff") format("woff"),
+    url("../assets/fonts/ikaros_regular.woff2") format("woff2");
 }
 
 @keyframes moveSlideshow {
@@ -21,5 +39,7 @@
 }
 
 $Primary-color: #01091a;
+$Secondary-color: #f2821b;
 
 $Primary-font: "Rambla";
+$Secondary-font: "Rambla-Bold";

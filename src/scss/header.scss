@@ -1,0 +1,86 @@
+@include large {
+  header {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    .nav {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      width: 95%;
+      justify-content: space-between;
+
+      .menu {
+        display: flex;
+        align-items: center;  
+        justify-content: center; 
+          
+        & ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          & li { 
+            text-transform: uppercase;
+            cursor: pointer;
+            user-select: none;
+            margin: 0 40px;
+            
+
+            & a {
+              font-size: 21px;
+              color: white;
+              text-decoration: none;
+              transition: ease 0.2s;
+              font-family: $Primary-font;
+            }
+
+            & a:hover {
+              border-bottom: .20em solid orange;
+              
+            }
+          }
+        }
+      }
+
+
+      .right {
+        width: auto;
+        align-items: center;
+        margin-left: 400px;
+        
+        .search {
+          text-decoration: none;
+        }
+        .bell {
+          margin-left: 15px;
+          text-decoration: none;
+        }
+      }
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@include medium {
+  .nav {
+    display: none;
+  }
+  
+}
+
+@include small {
+  .nav {
+    display: none;
+  }
+}
+
+header.sticky {
+  background-color: orange;
+}
