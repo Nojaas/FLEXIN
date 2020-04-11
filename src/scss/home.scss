@@ -36,19 +36,15 @@ main {
           -webkit-text-stroke: 1px white;
           -moz-text-stroke: 1px white;
           white-space: nowrap;
-          animation-timing-function: linear;
-          animation-duration: 15s;
-          animation-iteration-count: infinite;
-
-          animation-name: play;
+          animation: play 10s linear infinite;
 
           @keyframes play {
             0% {
-              margin-left: 250px;
+              margin-left: 10px;
             }
 
             100% {
-              margin-left: -500px;
+              margin-left: -280px;
             }
           }
         }
@@ -81,11 +77,11 @@ main {
             height: 42px;
             border: orange 1.5px solid;
             margin-right: 16px;
-            font-size: 15px;
 
-            .triangle {
+            img {
               transform: translateX(2px);
               color: white;
+              width: 8px;
             }
           }
           h3 {
@@ -120,9 +116,9 @@ main {
     .resume {
       &__title {
         margin-bottom: 10px;
-        h3 {
+        h2 {
           color: white;
-          text-transform: capitalize;
+
           font-family: "Rambla";
           font-weight: bold;
           font-size: 16px;
@@ -134,20 +130,51 @@ main {
         flex-direction: row;
 
         img {
-          width: 180px;
+          width: 200px;
           padding-right: 10px;
         }
       }
     }
   }
 
+
+  /*  ---- Section new ---- */
+
+  .home__new {
+    display: flex;
+    height: auto;
+    position: relative;
+
 /* ---- Section Emmy ----*/
 
   .home__top10 {
     margin-left: 10px;
+
     margin-bottom: 20px;
-    .top10__title {
+    flex-direction: column;
+    margin-left: 10px;
+    .new {
       margin-bottom: 10px;
+
+      &__title {
+        margin-bottom: 10px;
+        h2 {
+          color: white;
+          font-family: "Rambla";
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+
+      &__movies {
+        display: flex;
+        flex-direction: row;
+        img {
+          height: 170px;
+
+          padding-right: 10px;
+        }
+
       color: white;
       text-transform: capitalize;
       font-family: "Rambla";
@@ -166,42 +193,141 @@ main {
       img {
         height: 170px;
         padding-right: 10px;
+
       }
     }
   }
 
-  .home__tendency {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    .tendency__title {
-      margin-bottom: 10px;
-      color: white;
-      text-transform: capitalize;
-      font-family: "Rambla";
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .tendency__img {
-      display: flex;
-      flex-wrap: nowrap;
-      img {
-        height: 170px;
-        padding-right: 10px;
-      }
-    }
-  }
+  /* ---- Section Thonos ---- */
 
-  .home__originals {
-    margin-left: 10px;
+  .home__thonosmovie {
+    display: flex;
+    height: auto;
+    position: relative;
     margin-bottom: 20px;
-    .originals__title {
-      margin-bottom: 10px;
-      color: white;
-      text-transform: capitalize;
-      font-family: "Rambla";
-      font-weight: bold;
-      font-size: 16px;
+
+
+    flex-direction: column;
+    align-items: center;
+    .thonosmovie {
+      &__title {
+        margin-bottom: 10px;
+
+        img {
+          width: 250px;
+        }
+      }
+
+      &__img {
+        img {
+          height: 200px;
+        }
+      }
+
+      &__info {
+        margin-top: 10px;
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .play {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-right: 120px;
+
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background-color: transparent;
+              border-radius: 50px;
+              width: 42px;
+              height: 42px;
+              border: orange 1.5px solid;
+              margin-right: 12px;
+              img {
+                transform: translateX(2px);
+                color: white;
+                width: 8px;
+              }
+            }
+
+            h2 {
+              font-size: 16px;
+              font-family: "Rambla";
+              text-transform: uppercase;
+            }
+          }
+
+          .fav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+              margin-right: 12px;
+            }
+
+            img {
+              width: 20px;
+            }
+          }
+        }
+
+   
+
+/*  ---- Section top 10 ---- */
+
+.home__top10 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  .top10__title {
+    margin-bottom: 10px;
+    color: white;
+
+    font-family: "Rambla";
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .top10__img {
+    display: flex;
+    flex-wrap: nowrap;
+    img {
+      height: 170px;
+
+      padding-right: 10px;
     }
+
+  }
+}
+
+/*  ---- Section tendency ---- */
+
+.home__tendency {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  .tendency__title {
+    margin-bottom: 10px;
+    color: white;
+
+    font-family: "Rambla";
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .tendency__img {
+    display: flex;
+    flex-wrap: nowrap;
+
+    img {
+      height: 170px;
+      padding-right: 10px;
+=======
     .originals__img {
       display: flex;
       flex-wrap: nowrap;
@@ -209,30 +335,56 @@ main {
         height: 200px;
         padding-right: 10px;
       }
+
     }
   }
+}
 
-  .home__mustsee {
-    margin-left: 10px;
-    margin-bottom: 20px;
+/*  ---- Section originals ---- */
 
-    .mustsee__title {
-      margin-bottom: 10px;
-      color: white;
-      text-transform: capitalize;
-      font-family: "Rambla";
-      font-weight: bold;
-      font-size: 16px;
+.home__originals {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  .originals__title {
+    margin-bottom: 10px;
+    color: white;
+
+    font-family: "Rambla";
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .originals__img {
+    display: flex;
+    flex-wrap: nowrap;
+    img {
+      height: 200px;
+      padding-right: 10px;
     }
-    .mustsee__img {
-      margin-bottom: 10px;
-      display: flex;
-      flex-wrap: nowrap;
+  }
+}
 
-      img {
-        height: 170px;
-        padding-right: 10px;
-      }
+/*  ---- Section mustsee ---- */
+
+.home__mustsee {
+  margin-left: 10px;
+  margin-bottom: 20px;
+
+  .mustsee__title {
+    margin-bottom: 10px;
+    color: white;
+
+    font-family: "Rambla";
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .mustsee__img {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    img {
+      height: 170px;
+      padding-right: 10px;
     }
   }
 }
