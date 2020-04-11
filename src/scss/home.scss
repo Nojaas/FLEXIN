@@ -1,63 +1,238 @@
-.home__top10{
-    .top10__title{
-    font-size: 18px;
-    }
-    .top10__img{
+main {
+  background-color: #01091a;
+
+  /* ---- Section presentation ---- */
+
+  .home__presentation {
+    display: flex;
+    height: auto;
+    position: relative;
+
+    .presentation {
+      &__img {
+        height: auto;
+        img {
+          width: 100vw;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      &__title {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        margin-top: 40px;
         display: flex;
-        flex-wrap: nowrap;
-            img{
-            width: 118px;
-            height: 172px;
+        flex-direction: row;
+
+        h1 {
+          font-size: 45px;
+          text-transform: uppercase;
+          font-family: "ReemKufi";
+          color: transparent;
+
+          -webkit-text-stroke: 1px white;
+          -moz-text-stroke: 1px white;
+          white-space: nowrap;
+          animation-timing-function: linear;
+          animation-duration: 15s;
+          animation-iteration-count: infinite;
+
+          animation-name: play;
+
+          @keyframes play {
+            0% {
+              margin-left: 250px;
             }
+
+            100% {
+              margin-left: -500px;
+            }
+          }
         }
-    }
+      }
 
-
-
-.home__tendency{
-    .tendency__title{
-    font-size: 18px;
-    }
-    .tendency__img{
+      &__button {
+        position: absolute;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-            img{
-            width: 118px;
-            height: 172px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        bottom: 40px;
+        right: 20px;
+
+        .play {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: transparent;
+            border-radius: 50px;
+            width: 42px;
+            height: 42px;
+            border: orange 1.5px solid;
+            margin-right: 16px;
+            font-size: 15px;
+
+            .triangle {
+              transform: translateX(2px);
+              color: white;
+            }
+          }
+          h3 {
+            display: none;
+          }
         }
-    }
-}
 
-
-.home__originals{
-    .originals__title{
-    font-size: 18px;
+        .info {
+          button {
+            border: white solid 0.5px;
+            font-size: 14px;
+            background-color: transparent;
+            color: white;
+            text-transform: uppercase;
+            padding: 3px 10px;
+          }
+        }
+      }
     }
-    .originals__img{
+  }
+
+  /* ---- Section resume ----*/
+
+  .home__resume {
+    display: flex;
+    height: auto;
+    position: relative;
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin-left: 10px;
+
+    .resume {
+      &__title {
+        margin-bottom: 10px;
+        h3 {
+          color: white;
+          text-transform: capitalize;
+          font-family: "Rambla";
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+
+      &__movies {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-            img{
-            width: 230px;
-            height: 260px;
-        }
-    }
-}
+        flex-direction: row;
 
-
-.home__mustsee{
-    .mustsee__title{
-    font-size: 18px;
-    }
-    .mustsee__img{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-            img{
-            width: 118px;
-            height: 172px;
-            
+        img {
+          width: 180px;
+          padding-right: 10px;
         }
+      }
     }
+  }
+
+/* ---- Section Emmy ----*/
+
+  .home__top10 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    .top10__title {
+      margin-bottom: 10px;
+      color: white;
+      text-transform: capitalize;
+      font-family: "Rambla";
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .top10__img {
+      display: flex;
+      flex-wrap: nowrap;
+      h2{
+        font-family: "Doctor-Glitch";
+        font-size: 100px;
+        color: #A0A0A0;
+        opacity: 55%;
+      }
+      img {
+        height: 170px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .home__tendency {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    .tendency__title {
+      margin-bottom: 10px;
+      color: white;
+      text-transform: capitalize;
+      font-family: "Rambla";
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .tendency__img {
+      display: flex;
+      flex-wrap: nowrap;
+      img {
+        height: 170px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .home__originals {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    .originals__title {
+      margin-bottom: 10px;
+      color: white;
+      text-transform: capitalize;
+      font-family: "Rambla";
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .originals__img {
+      display: flex;
+      flex-wrap: nowrap;
+      img {
+        height: 200px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .home__mustsee {
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+    .mustsee__title {
+      margin-bottom: 10px;
+      color: white;
+      text-transform: capitalize;
+      font-family: "Rambla";
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .mustsee__img {
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+
+      img {
+        height: 170px;
+        padding-right: 10px;
+      }
+    }
+  }
 }
