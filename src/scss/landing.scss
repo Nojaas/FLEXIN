@@ -18,24 +18,21 @@ body {
       &__secondrow,
       &__thirdrow {
         display: flex;
-        animation: moveSlideshowleft 14s linear infinite;
+        animation: moveSlideshowleft 25s linear infinite;
 
         &__img {
           width: 125px;
           height: 182px;
           margin: 7px;
         }
-
-        &__secondrow {
-          animation: moveSlideshowright 14s linear infinite;
-        }
       }
 
       &__row {
-        margin: -15% auto auto -15%;
+        margin: -10% auto auto -10%;
       }
       &__secondrow {
         margin: auto auto auto -20%;
+        animation: moveSlideshowright 25s linear infinite;
       }
       &__thirdrow {
         margin: auto auto auto -15%;

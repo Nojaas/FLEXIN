@@ -34,13 +34,13 @@
 
 @keyframes moveSlideshowleft {
   100% {
-    transform: translateX(-66%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes moveSlideshowright {
-  100% {
-    transform: translateX(66%);
+  0% {
+    transform: translateX(-50%);
   }
 }
 
