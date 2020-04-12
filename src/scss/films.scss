@@ -1,0 +1,217 @@
+main {
+  background-color: #01091a;
+
+  /* ---- Section presentation ---- */
+
+  .films__presentation {
+    display: flex;
+    height: auto;
+    position: relative;
+
+    .presentation {
+      &__img {
+        height: auto;
+
+        img {
+          width: 100vw;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      &__title {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+
+        h1 {
+          font-size: 45px;
+          text-transform: uppercase;
+          font-family: "ReemKufi";
+          color: transparent;
+
+          -webkit-text-stroke: 1px white;
+          -moz-text-stroke: 1px white;
+          white-space: nowrap;
+          animation: play 10s linear infinite;
+
+          @keyframes play {
+            0% {
+              margin-left: 10px;
+            }
+
+            100% {
+              margin-left: -280px;
+            }
+          }
+        }
+      }
+
+      &__button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        bottom: 40px;
+        right: 20px;
+
+        .play {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: transparent;
+            border-radius: 50px;
+            width: 42px;
+            height: 42px;
+            border: orange 1.5px solid;
+            margin-right: 16px;
+
+            img {
+              transform: translateX(2px);
+              color: white;
+              width: 8px;
+            }
+          }
+
+          h3 {
+            display: none;
+          }
+        }
+
+        .info {
+          button {
+            border: white solid 0.5px;
+            font-size: 14px;
+            background-color: transparent;
+            color: white;
+            text-transform: uppercase;
+            padding: 3px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---- Section resume ----*/
+
+.films__resume {
+  display: flex;
+  height: auto;
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: column;
+  margin-left: 10px;
+
+  .resume {
+    &__title {
+      margin-bottom: 10px;
+
+      h2 {
+        color: white;
+
+        font-family: "Rambla";
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    &__movies {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        width: 200px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+/*  ---- Section drama ---- */
+
+.films__drama {
+  display: flex;
+  height: auto;
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: column;
+  margin-left: 10px;
+
+  .drama {
+    margin-bottom: 10px;
+
+    &__title {
+      margin-bottom: 10px;
+
+      h2 {
+        color: white;
+        font-family: "Rambla";
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    &__movies {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        height: 170px;
+
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+/*  ---- Section war ---- */
+
+.films__war {
+  display: flex;
+  height: auto;
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: column;
+  margin-left: 10px;
+
+  .war {
+    margin-bottom: 10px;
+
+    &__title {
+      margin-bottom: 10px;
+
+      h2 {
+        color: white;
+        font-family: "Rambla";
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    &__movies {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        height: 170px;
+
+        padding-right: 10px;
+      }
+    }
+  }
+}
