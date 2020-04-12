@@ -364,10 +364,14 @@ main {
   .top10__img {
     display: flex;
     flex-wrap: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
 
+    img {
+      height: 170px;
+      padding-right: 10px;
+      flex: 0 0 auto;
+      z-index: 1;
+    }
     h2 {
       font-family: "Doctor-Glitch";
       font-size: 100px;
@@ -376,16 +380,18 @@ main {
       flex: 0 0 auto;
       display: flex;
       align-items: flex-end;
+
+
+      z-index: 0;
+
     }
-    img {
-      height: 170px;
-      padding-right: 10px;
-      flex: 0 0 auto;
+   
 
       @include large {
         height: 200px;
       }
-    }
+
+    
   }
 }
 
