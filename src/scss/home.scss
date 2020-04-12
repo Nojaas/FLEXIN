@@ -12,7 +12,7 @@ main {
       &__img {
         height: auto;
         img {
-          width: 100vw;
+          width: 100%;
           height: auto;
           object-fit: cover;
         }
@@ -177,7 +177,6 @@ main {
     height: auto;
     position: relative;
     margin-bottom: 20px;
-
     flex-direction: column;
     align-items: center;
     .thonosmovie {
@@ -195,7 +194,8 @@ main {
         }
       }
 
-      &__info {
+      &__info,
+      &__info__desktop {
         margin-top: 10px;
 
         .button {
@@ -260,6 +260,68 @@ main {
 
           p {
             width: 85%;
+          }
+        }
+      }
+
+      &__info__desktop {
+        display: none;
+      }
+
+      @include large {
+        &__info {
+          display: none;
+        }
+
+        &__info__desktop {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @include large {
+    .home__thonosmovie {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      flex-flow: row;
+      width: auto;
+
+      .thonosmovie {
+        &__title {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          width: 40%;
+
+          img {
+            width: 550px;
+          }
+        }
+
+        &__img {
+          img {
+            width: auto;
+            height: auto;
+          }
+        }
+
+        &__info__desktop {
+          .button {
+            justify-content: center;
+
+            .play {
+              button {
+                width: 65px;
+                height: 65px;
+                border-width: 2px;
+              }
+            }
+          }
+          .texte {
+            justify-content: end;
+            font-size: 22px;
           }
         }
       }
