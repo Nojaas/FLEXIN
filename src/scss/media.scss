@@ -32,9 +32,15 @@
     url("../assets/fonts/ikaros_regular.woff2") format("woff2");
 }
 
-@keyframes moveSlideshow {
+@keyframes moveSlideshowleft {
   100% {
     transform: translateX(-66%);
+  }
+}
+
+@keyframes moveSlideshowright {
+  100% {
+    transform: translateX(66%);
   }
 }
 

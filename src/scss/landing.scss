@@ -18,12 +18,16 @@ body {
       &__secondrow,
       &__thirdrow {
         display: flex;
-        animation: moveSlideshow 7s linear infinite;
+        animation: moveSlideshowleft 14s linear infinite;
 
         &__img {
           width: 125px;
           height: 182px;
           margin: 7px;
+        }
+
+        &__secondrow {
+          animation: moveSlideshowright 14s linear infinite;
         }
       }
 
