@@ -7,12 +7,14 @@
     justify-content: center;
     z-index: 100;
     transition: ease-in-out 0.5s;
+
     .nav {
       margin: auto;
       display: flex;
       align-items: center;
       width: 95%;
       justify-content: space-between;
+
 
       .menu {
         display: flex;
@@ -69,15 +71,8 @@
   }
 }
 
-@include medium {
-  .nav {
-    display: none;
-  }
-  
-}
-
-@include small {
-  .nav {
+@media(max-width: 1025px) {
+  header {
     display: none;
   }
 }
