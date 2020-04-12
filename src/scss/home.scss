@@ -39,12 +39,8 @@ main {
           animation: play 10s linear infinite;
 
           @keyframes play {
-            0% {
-              margin-left: 10px;
-            }
-
             100% {
-              margin-left: -280px;
+              transform: translateX(-40%);
             }
           }
         }
@@ -128,10 +124,14 @@ main {
       &__movies {
         display: flex;
         flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
 
         img {
           width: 200px;
           padding-right: 10px;
+          flex: 0 0 auto;
         }
       }
     }
@@ -209,7 +209,7 @@ main {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding-right: 120px;
+            padding-right: 80px;
 
             button {
               display: flex;
@@ -283,16 +283,21 @@ main {
   .top10__img {
     display: flex;
     flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 
     h2 {
       font-family: "Doctor-Glitch";
       font-size: 100px;
       color: #a0a0a0;
       opacity: 55%;
+      flex: 0 0 auto;
     }
     img {
       height: 170px;
       padding-right: 10px;
+      flex: 0 0 auto;
     }
   }
 }
@@ -313,10 +318,14 @@ main {
   .tendency__img {
     display: flex;
     flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 
     img {
       height: 170px;
       padding-right: 10px;
+      flex: 0 0 auto;
     }
   }
 }
@@ -337,9 +346,13 @@ main {
   .originals__img {
     display: flex;
     flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     img {
       height: 200px;
       padding-right: 10px;
+      flex: 0 0 auto;
     }
   }
 }
@@ -362,10 +375,14 @@ main {
     margin-bottom: 10px;
     display: flex;
     flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 
     img {
       height: 170px;
       padding-right: 10px;
+      flex: 0 0 auto;
     }
   }
 }
