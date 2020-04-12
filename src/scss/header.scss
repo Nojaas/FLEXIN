@@ -31,8 +31,10 @@
             cursor: pointer;
             user-select: none;
             margin: 0 40px;
+            display: table-cell; 
+            position: relative; 
+            padding: 10px 0;
             
-
             & a {
               font-size: 21px;
               color: white;
@@ -41,9 +43,21 @@
               font-family: $Primary-font;
             }
 
-            & a:hover {
-              border-bottom: .20em solid orange;
-              
+            a:after {    
+              background: none repeat scroll 0 0 transparent;
+              bottom: 0;
+              content: "";
+              display: block;
+              height: 3px;
+              left: 50%;
+              position: absolute;
+              background: $Secondary-color;
+              transition: width 0.3s ease 0s, left 0.3s ease 0s;
+              width: 0;
+            }
+            a:hover:after { 
+              width: 100%; 
+              left: 0;
             }
           }
         }
@@ -78,6 +92,6 @@
 }
 
 header.sticky {
-  background-color:rgba(1, 9, 26, 1);
+  background-color:$Primary-color;
   transition: ease-in-out 0.5s;
 }
