@@ -8,13 +8,21 @@ main {
     height: auto;
     position: relative;
 
+    @include medium {
+      height: auto;
+    }
+
     .presentation {
       &__img {
         height: auto;
         img {
           width: 100vw;
-          height: auto;
+          height: 100%;
           object-fit: cover;
+
+          @include medium {
+            height: auto;
+          }
         }
       }
 
@@ -26,12 +34,25 @@ main {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
+        overflow: hidden;
+
+        @include medium {
+          margin-top: 85px;
+        }
 
         h1 {
-          font-size: 45px;
+          font-size: 35px;
           text-transform: uppercase;
           font-family: "ReemKufi";
           color: transparent;
+
+          @include small {
+            font-size: 45px;
+          }
+
+          @include medium {
+            font-size: 75px;
+          }
 
           -webkit-text-stroke: 1px white;
           -moz-text-stroke: 1px white;
@@ -54,8 +75,16 @@ main {
         flex-direction: row;
         width: auto;
         height: auto;
-        bottom: 40px;
-        right: 20px;
+        bottom: 30px;
+        right: 25px;
+
+        @include small {
+          bottom: 50px;
+        }
+
+        @include medium {
+          bottom: 130px;
+        }
 
         .play {
           display: flex;
@@ -71,17 +100,33 @@ main {
             border-radius: 50px;
             width: 42px;
             height: 42px;
-            border: orange 1.5px solid;
-            margin-right: 16px;
+            border: $Secondary-color 1.5px solid;
+            margin-right: 20px;
+            @include medium {
+              margin-right: 8px;
+              width: 60px;
+              height: 60px;
+            }
 
             img {
               transform: translateX(2px);
               color: white;
               width: 8px;
+
+              @include medium {
+                width: 10px;
+              }
             }
           }
           h3 {
             display: none;
+
+            @include medium {
+              display: block;
+              margin-right: 40px;
+              font-size: 16px;
+              text-transform: uppercase;
+            }
           }
         }
 
@@ -93,6 +138,10 @@ main {
             color: white;
             text-transform: uppercase;
             padding: 3px 10px;
+
+            @include medium {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -115,8 +164,7 @@ main {
         h2 {
           color: white;
 
-          font-family: "Rambla";
-          font-weight: bold;
+          font-family: $Secondary-font;
           font-size: 16px;
         }
       }
@@ -132,6 +180,10 @@ main {
           width: 200px;
           padding-right: 10px;
           flex: 0 0 auto;
+
+          @include medium {
+            width: 250px;
+          }
         }
       }
     }
@@ -161,9 +213,12 @@ main {
       &__movies {
         display: flex;
         flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         img {
           height: 170px;
-
+          flex: 0 0 auto;
           padding-right: 10px;
         }
       }
@@ -177,21 +232,26 @@ main {
     height: auto;
     position: relative;
     margin-bottom: 20px;
-
     flex-direction: column;
     align-items: center;
+
     .thonosmovie {
+      display: flex;
       &__title {
         margin-bottom: 10px;
 
         img {
-          width: 250px;
+          width: 220px;
         }
       }
 
       &__img {
         img {
-          height: 200px;
+          height: 150px;
+
+          @include small {
+            height: 200px;
+          }
         }
       }
 
@@ -209,7 +269,11 @@ main {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding-right: 80px;
+            padding-right: 50px;
+
+            @include small {
+              padding-right: 80px;
+            }
 
             button {
               display: flex;
@@ -220,7 +284,7 @@ main {
               border-radius: 50px;
               width: 42px;
               height: 42px;
-              border: orange 1.5px solid;
+              border: $Secondary-color 1.5px solid;
               margin-right: 12px;
               img {
                 transform: translateX(2px);
