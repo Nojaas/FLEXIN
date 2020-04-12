@@ -11,6 +11,7 @@ main {
     .presentation {
       &__img {
         height: auto;
+
         img {
           width: 100vw;
           height: auto;
@@ -66,6 +67,7 @@ main {
           flex-direction: row;
           justify-content: center;
           align-items: center;
+
           button {
             display: flex;
             justify-content: center;
@@ -84,6 +86,7 @@ main {
               width: 8px;
             }
           }
+
           h3 {
             display: none;
           }
@@ -116,6 +119,7 @@ main {
     .resume {
       &__title {
         margin-bottom: 10px;
+
         h2 {
           color: white;
 
@@ -146,10 +150,13 @@ main {
     margin-bottom: 20px;
     flex-direction: column;
     margin-left: 10px;
+
     .new {
       margin-bottom: 10px;
+
       &__title {
         margin-bottom: 10px;
+
         h2 {
           color: white;
           font-family: "Rambla";
@@ -161,6 +168,7 @@ main {
       &__movies {
         display: flex;
         flex-direction: row;
+
         img {
           height: 170px;
 
@@ -180,6 +188,7 @@ main {
 
     flex-direction: column;
     align-items: center;
+
     .thonosmovie {
       &__title {
         margin-bottom: 10px;
@@ -222,6 +231,7 @@ main {
               height: 42px;
               border: orange 1.5px solid;
               margin-right: 12px;
+
               img {
                 transform: translateX(2px);
                 color: white;
@@ -272,6 +282,7 @@ main {
 .home__top10 {
   margin-left: 10px;
   margin-bottom: 20px;
+
   .top10__title {
     margin-bottom: 10px;
     color: white;
@@ -280,6 +291,7 @@ main {
     font-weight: bold;
     font-size: 16px;
   }
+
   .top10__img {
     display: flex;
     flex-wrap: nowrap;
@@ -290,6 +302,7 @@ main {
       color: #a0a0a0;
       opacity: 55%;
     }
+
     img {
       height: 170px;
       padding-right: 10px;
@@ -302,6 +315,7 @@ main {
 .home__tendency {
   margin-left: 10px;
   margin-bottom: 20px;
+
   .tendency__title {
     margin-bottom: 10px;
     color: white;
@@ -310,6 +324,7 @@ main {
     font-weight: bold;
     font-size: 16px;
   }
+
   .tendency__img {
     display: flex;
     flex-wrap: nowrap;
@@ -326,6 +341,7 @@ main {
 .home__originals {
   margin-left: 10px;
   margin-bottom: 20px;
+
   .originals__title {
     margin-bottom: 10px;
     color: white;
@@ -334,9 +350,11 @@ main {
     font-weight: bold;
     font-size: 16px;
   }
+
   .originals__img {
     display: flex;
     flex-wrap: nowrap;
+
     img {
       height: 200px;
       padding-right: 10px;
@@ -358,6 +376,7 @@ main {
     font-weight: bold;
     font-size: 16px;
   }
+
   .mustsee__img {
     margin-bottom: 10px;
     display: flex;
