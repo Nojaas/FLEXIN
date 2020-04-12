@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+
+    "landing": "parcel src/screens/landing.html",
+    "player": "parcel src/player/index.html",
     "dev": "parcel src/screens/home.html",
     "build": "parcel build src/screens/home.html"
+
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,8 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "plyr": "^3.5.10"
   }
 }

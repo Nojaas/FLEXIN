@@ -357,6 +357,8 @@ main {
       color: #a0a0a0;
       opacity: 55%;
       flex: 0 0 auto;
+      display: flex;
+      align-items: flex-end;
     }
     img {
       height: 170px;
