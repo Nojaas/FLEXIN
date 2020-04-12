@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     z-index: 100;
+    transition: ease-in-out 0.5s;
     .nav {
       margin: auto;
       display: flex;
@@ -82,5 +83,6 @@
 }
 
 header.sticky {
-  background-color: orange;
+  background-color:rgba(1, 9, 26, 1);
+  transition: ease-in-out 0.5s;
 }
