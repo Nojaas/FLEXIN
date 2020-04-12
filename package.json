@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/screens/home.html",
+    "dev": "parcel src/screens/landing.html",
     "build": "parcel build src/screens/landing.html"
   },
   "repository": {
