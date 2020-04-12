@@ -166,6 +166,9 @@ main {
 
           font-family: $Secondary-font;
           font-size: 16px;
+          @include large{
+            font-size: 24px;
+          }
         }
       }
 
@@ -180,9 +183,11 @@ main {
           width: 200px;
           padding-right: 10px;
           flex: 0 0 auto;
-
           @include medium {
             width: 250px;
+          }
+          @include large {
+            width: 325px;
           }
         }
       }
@@ -207,6 +212,10 @@ main {
           font-family: "Rambla";
           font-weight: bold;
           font-size: 16px;
+          
+          @include large {
+            font-size: 24px;
+          }
         }
       }
 
@@ -220,6 +229,10 @@ main {
           height: 170px;
           flex: 0 0 auto;
           padding-right: 10px;
+
+          @include large {
+            height: 200px;
+          }
         }
       }
     }
@@ -343,6 +356,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .top10__img {
     display: flex;
@@ -364,6 +381,10 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
+
+      @include large {
+        height: 200px;
+      }
     }
   }
 }
@@ -380,6 +401,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .tendency__img {
     display: flex;
@@ -392,6 +417,10 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
+
+      @include large {
+      height: 200px;
+      }
     }
   }
 }
@@ -408,6 +437,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .originals__img {
     display: flex;
@@ -419,6 +452,10 @@ main {
       height: 200px;
       padding-right: 10px;
       flex: 0 0 auto;
+
+      @include large {
+        height: 400px;
+      }
     }
   }
 }
@@ -436,6 +473,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .mustsee__img {
     margin-bottom: 10px;
@@ -449,6 +490,10 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
+
+      @include large {
+        height: 200px;
+      }
     }
   }
 }
