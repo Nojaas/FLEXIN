@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/screens/landing.html",
-    "build": "parcel build src/screens/landing.html"
+
+    "landing": "parcel src/screens/landing.html",
+    "player": "parcel src/player/index.html",
+    "dev": "parcel src/screens/home.html",
+    "build": "parcel build src/screens/home.html"
+
   },
   "repository": {
     "type": "git",
@@ -23,7 +27,6 @@
     "sass": "^1.26.3"
   },
   "dependencies": {
-    "jquery": "^3.5.0",
-    "jquery-ui-dist": "^1.12.1"
+    "plyr": "^3.5.10"
   }
 }
