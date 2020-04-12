@@ -23,5 +23,9 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "jquery-ui-dist": "^1.12.1"
   }
 }
