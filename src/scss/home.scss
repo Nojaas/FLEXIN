@@ -83,7 +83,7 @@ main {
         }
 
         @include medium {
-          bottom: 130px;
+          bottom: 140px;
         }
 
         .play {
@@ -124,7 +124,7 @@ main {
             @include medium {
               display: block;
               margin-right: 40px;
-              font-size: 16px;
+              font-size: 18px;
               text-transform: uppercase;
             }
           }
@@ -140,7 +140,7 @@ main {
             padding: 3px 10px;
 
             @include medium {
-              font-size: 16px;
+              font-size: 18px;
             }
           }
         }
@@ -166,7 +166,7 @@ main {
 
           font-family: $Secondary-font;
           font-size: 16px;
-          @include large{
+          @include large {
             font-size: 24px;
           }
         }
@@ -212,7 +212,7 @@ main {
           font-family: "Rambla";
           font-weight: bold;
           font-size: 16px;
-          
+
           @include large {
             font-size: 24px;
           }
@@ -358,11 +358,11 @@ main {
     }
   }
 
-  @include large {
+  @include medium {
     .home__thonosmovie {
       justify-content: center;
       align-items: center;
-      margin: auto;
+
       flex-flow: row;
       width: auto;
 
@@ -374,14 +374,13 @@ main {
           width: 40%;
 
           img {
-            width: 550px;
+            width: 300px;
           }
         }
 
         &__img {
           img {
-            width: auto;
-            height: auto;
+            height: 300px;
           }
         }
 
@@ -444,17 +443,8 @@ main {
       display: flex;
       align-items: flex-end;
 
-
       z-index: 0;
-
     }
-   
-
-      @include large {
-        height: 200px;
-      }
-
-    
   }
 }
 
@@ -486,10 +476,6 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
-
-      @include large {
-      height: 200px;
-      }
     }
   }
 }
@@ -559,10 +545,6 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
-
-      @include large {
-        height: 200px;
-      }
     }
   }
 }
