@@ -6,6 +6,7 @@ main {
   .home__presentation {
     display: flex;
     height: auto;
+    width: 100%;
     position: relative;
     overflow: hidden;
     width: fit-content;
@@ -282,7 +283,7 @@ main {
 
       &__img {
         img {
-          height: 200px;
+          height: 150px;
         }
       }
 
@@ -372,6 +373,10 @@ main {
       align-items: center;
       flex-flow: row;
       width: auto;
+      @include medium {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       .thonosmovie {
         &__title {
@@ -402,6 +407,10 @@ main {
 
             .play {
               padding-right: 50px;
+
+              @include medium {
+                padding-right: 35px;
+              }
               button {
                 width: 45px;
                 height: 45px;
@@ -412,6 +421,10 @@ main {
           .texte {
             justify-content: end;
             font-size: 20px;
+
+            @include medium {
+              font-size: 18px;
+            }
           }
         }
       }
