@@ -98,6 +98,9 @@ main {
         @include large {
           bottom: 160px;
         }
+        @include Xlarge {
+          bottom: 350px;
+        }
 
         .play {
           display: flex;
@@ -190,7 +193,10 @@ main {
           font-family: $Secondary-font;
           font-size: 16px;
           @include large {
-            font-size: 24px;
+            font-size: 18px;
+          }
+          @include Xlarge {
+            font-size: 22px;
           }
         }
       }
@@ -237,7 +243,10 @@ main {
           font-size: 16px;
 
           @include large {
-            font-size: 24px;
+            font-size: 18px;
+          }
+          @include Xlarge {
+            font-size: 22px;
           }
         }
       }
@@ -271,7 +280,10 @@ main {
       font-size: 16px;
 
       @include large {
-        font-size: 24px;
+        font-size: 18px;
+      }
+      @include Xlarge {
+        font-size: 22px;
       }
     }
     .war__movies {
@@ -300,7 +312,10 @@ main {
       font-size: 16px;
 
       @include large {
-        font-size: 24px;
+        font-size: 18px;
+      }
+      @include Xlarge {
+        font-size: 22px;
       }
     }
     .horror__movies {
@@ -329,7 +344,10 @@ main {
       font-size: 16px;
 
       @include large {
-        font-size: 24px;
+        font-size: 18px;
+      }
+      @include Xlarge {
+        font-size: 22px;
       }
     }
     .criminal__movies {
@@ -358,7 +376,10 @@ main {
       font-size: 16px;
 
       @include large {
-        font-size: 24px;
+        font-size: 18px;
+      }
+      @include Xlarge {
+        font-size: 22px;
       }
     }
     .sf__movies {
@@ -588,7 +609,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .action__movies {
@@ -617,7 +641,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .sg__movies {
@@ -646,7 +673,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .family__movies {
@@ -675,7 +705,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .thriller__movies {
@@ -704,7 +737,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .kids__movies {

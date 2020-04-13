@@ -6,6 +6,14 @@
   overflow: hidden;
   width: fit-content;
 
+  @include small {
+    height: 400px;
+  }
+
+  @include medium {
+    height: auto;
+  }
+
   .presentation {
     &__img {
       height: auto;
@@ -13,6 +21,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        @include medium {
+          height: auto;
+        }
       }
 
       .i-large,

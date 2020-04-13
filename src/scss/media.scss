@@ -13,6 +13,11 @@
     @content;
   }
 }
+@mixin Xlarge {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
 
 @font-face {
   font-family: "Rambla";
