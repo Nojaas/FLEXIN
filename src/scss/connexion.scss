@@ -1,9 +1,14 @@
+.body--login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Account {
   width: 320px;
   z-index: 100;
   border: solid 1.5px $Secondary-color;
   padding: 20px;
-  margin: auto;
 }
 
 .Account__logo{
@@ -53,5 +58,44 @@
 }
 
 .Account__password {
-  
+  text-decoration: none;
+  color: white;
 }
+
+.Login__page {
+  position: relative;
+  z-index: -5;
+
+  &__scroll {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    opacity: 30%;
+
+    &__row,
+    &__secondrow,
+    &__thirdrow {
+      display: flex;
+      animation: moveSlideshow 7s linear infinite;
+
+      &__img {
+        width: 125px;
+        height: 182px;
+        margin: 7px;
+      }
+    }
+
+    &__row {
+      margin: -15% auto auto -15%;
+    }
+    &__secondrow {
+      margin: auto auto auto -20%;
+    }
+    &__thirdrow {
+      margin: auto auto auto -15%;
+    }
+  }
+}
+
