@@ -8,7 +8,7 @@ if(isset($_POST['forminscription']))
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $mail = htmlspecialchars($_POST['mail']);
     $mail2 = htmlspecialchars($_POST['mail2']);
-    $mdp = sha1($_POST['mdp']);//sha1 le mdp pour que personne ne le decrypte sha1
+    $mdp = sha1($_POST['mdp']);//sha1 le mdp pour que personne ne le decrypte sha1 nouvelle convention 
     $mdp2 = sha1($_POST['mdp2']);
 
     if(!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) //pour la securiter de la database
@@ -76,7 +76,7 @@ if(isset($_POST['forminscription']))
 </head>
 <body>
     
-    <div align="center">
+    <div align="center"> 
         <h2>Inscription</h2>
         <br /><br />
         <form method="POST" action="">

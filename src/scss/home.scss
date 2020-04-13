@@ -8,13 +8,21 @@ main {
     height: auto;
     position: relative;
 
+    @include medium {
+      height: auto;
+    }
+
     .presentation {
       &__img {
         height: auto;
         img {
-          width: 100vw;
+          width: 100%;
           height: auto;
           object-fit: cover;
+
+          @include medium {
+            height: auto;
+          }
         }
       }
 
@@ -26,12 +34,25 @@ main {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
+        overflow: hidden;
+
+        @include medium {
+          margin-top: 85px;
+        }
 
         h1 {
-          font-size: 45px;
+          font-size: 35px;
           text-transform: uppercase;
           font-family: "ReemKufi";
           color: transparent;
+
+          @include small {
+            font-size: 45px;
+          }
+
+          @include medium {
+            font-size: 75px;
+          }
 
           -webkit-text-stroke: 1px white;
           -moz-text-stroke: 1px white;
@@ -54,8 +75,16 @@ main {
         flex-direction: row;
         width: auto;
         height: auto;
-        bottom: 40px;
-        right: 20px;
+        bottom: 30px;
+        right: 25px;
+
+        @include small {
+          bottom: 50px;
+        }
+
+        @include medium {
+          bottom: 140px;
+        }
 
         .play {
           display: flex;
@@ -71,17 +100,33 @@ main {
             border-radius: 50px;
             width: 42px;
             height: 42px;
-            border: orange 1.5px solid;
-            margin-right: 16px;
+            border: $Secondary-color 1.5px solid;
+            margin-right: 20px;
+            @include medium {
+              margin-right: 8px;
+              width: 60px;
+              height: 60px;
+            }
 
             img {
               transform: translateX(2px);
               color: white;
               width: 8px;
+
+              @include medium {
+                width: 10px;
+              }
             }
           }
           h3 {
             display: none;
+
+            @include medium {
+              display: block;
+              margin-right: 40px;
+              font-size: 18px;
+              text-transform: uppercase;
+            }
           }
         }
 
@@ -93,6 +138,10 @@ main {
             color: white;
             text-transform: uppercase;
             padding: 3px 10px;
+
+            @include medium {
+              font-size: 18px;
+            }
           }
         }
       }
@@ -115,9 +164,11 @@ main {
         h2 {
           color: white;
 
-          font-family: "Rambla";
-          font-weight: bold;
+          font-family: $Secondary-font;
           font-size: 16px;
+          @include large {
+            font-size: 24px;
+          }
         }
       }
 
@@ -132,6 +183,12 @@ main {
           width: 200px;
           padding-right: 10px;
           flex: 0 0 auto;
+          @include medium {
+            width: 250px;
+          }
+          @include large {
+            width: 325px;
+          }
         }
       }
     }
@@ -155,16 +212,27 @@ main {
           font-family: "Rambla";
           font-weight: bold;
           font-size: 16px;
+
+          @include large {
+            font-size: 24px;
+          }
         }
       }
 
       &__movies {
         display: flex;
         flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         img {
           height: 170px;
-
+          flex: 0 0 auto;
           padding-right: 10px;
+
+          @include large {
+            height: 200px;
+          }
         }
       }
     }
@@ -177,25 +245,31 @@ main {
     height: auto;
     position: relative;
     margin-bottom: 20px;
-
     flex-direction: column;
     align-items: center;
+
     .thonosmovie {
+      display: flex;
       &__title {
         margin-bottom: 10px;
 
         img {
-          width: 250px;
+          width: 220px;
         }
       }
 
       &__img {
         img {
-          height: 200px;
+          height: 150px;
+
+          @include small {
+            height: 200px;
+          }
         }
       }
 
-      &__info {
+      &__info,
+      &__info__desktop {
         margin-top: 10px;
 
         .button {
@@ -209,7 +283,11 @@ main {
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding-right: 80px;
+            padding-right: 50px;
+
+            @include small {
+              padding-right: 80px;
+            }
 
             button {
               display: flex;
@@ -220,7 +298,7 @@ main {
               border-radius: 50px;
               width: 42px;
               height: 42px;
-              border: orange 1.5px solid;
+              border: $Secondary-color 1.5px solid;
               margin-right: 12px;
               img {
                 transform: translateX(2px);
@@ -263,6 +341,67 @@ main {
           }
         }
       }
+
+      &__info__desktop {
+        display: none;
+      }
+
+      @include large {
+        &__info {
+          display: none;
+        }
+
+        &__info__desktop {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @include medium {
+    .home__thonosmovie {
+      justify-content: center;
+      align-items: center;
+
+      flex-flow: row;
+      width: auto;
+
+      .thonosmovie {
+        &__title {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          width: 40%;
+
+          img {
+            width: 300px;
+          }
+        }
+
+        &__img {
+          img {
+            height: 300px;
+          }
+        }
+
+        &__info__desktop {
+          .button {
+            justify-content: center;
+
+            .play {
+              button {
+                width: 65px;
+                height: 65px;
+                border-width: 2px;
+              }
+            }
+          }
+          .texte {
+            justify-content: end;
+            font-size: 22px;
+          }
+        }
+      }
     }
   }
 }
@@ -279,25 +418,32 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .top10__img {
     display: flex;
     flex-wrap: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
 
+    img {
+      height: 170px;
+      padding-right: 10px;
+      flex: 0 0 auto;
+      z-index: 1;
+    }
     h2 {
       font-family: "Doctor-Glitch";
       font-size: 100px;
       color: #a0a0a0;
       opacity: 55%;
       flex: 0 0 auto;
-    }
-    img {
-      height: 170px;
-      padding-right: 10px;
-      flex: 0 0 auto;
+      display: flex;
+      align-items: flex-end;
+
+      z-index: 0;
     }
   }
 }
@@ -314,6 +460,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .tendency__img {
     display: flex;
@@ -342,6 +492,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .originals__img {
     display: flex;
@@ -353,6 +507,10 @@ main {
       height: 200px;
       padding-right: 10px;
       flex: 0 0 auto;
+
+      @include large {
+        height: 400px;
+      }
     }
   }
 }
@@ -370,6 +528,10 @@ main {
     font-family: "Rambla";
     font-weight: bold;
     font-size: 16px;
+
+    @include large {
+      font-size: 24px;
+    }
   }
   .mustsee__img {
     margin-bottom: 10px;

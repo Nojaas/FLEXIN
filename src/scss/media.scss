@@ -32,9 +32,15 @@
     url("../assets/fonts/ikaros_regular.woff2") format("woff2");
 }
 
-@keyframes moveSlideshow {
+@keyframes moveSlideshowleft {
   100% {
-    transform: translateX(-56%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveSlideshowright {
+  0% {
+    transform: translateX(-50%);
   }
 }
 
@@ -44,3 +50,14 @@ $Secondary-color: #f2821b;
 $Primary-font: "Rambla";
 $Secondary-font: "Rambla-Bold";
 $Terciary-font: "Ikaros";
+
+
+$sizes: 1 -8px, 3 -15px, 5 -20px, 7 -12px, 9 -15px, 11 -22px, 13 -20px, 15 -20px,
+  17 -22px, 19 -32px;
+
+@each $child, $size in $sizes {
+  .top10__img :nth-child(#{$child}) {
+    margin-right: $size;
+  }
+}
+
