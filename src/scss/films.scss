@@ -7,6 +7,7 @@ main {
     display: flex;
     height: auto;
     position: relative;
+    width: 100%;
 
     @include medium {
       height: auto;
@@ -396,10 +397,6 @@ main {
     &__img {
       img {
         height: 150px;
-
-        @include small {
-          height: 200px;
-        }
       }
     }
 
@@ -480,16 +477,6 @@ main {
     &__info__desktop {
       display: none;
     }
-
-    @include large {
-      &__info {
-        display: none;
-      }
-
-      &__info__desktop {
-        display: block;
-      }
-    }
   }
 }
 
@@ -497,9 +484,11 @@ main {
   .films__dydy {
     justify-content: center;
     align-items: center;
-
     flex-flow: row;
     width: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
 
     .dydy {
       &__title {
@@ -509,7 +498,50 @@ main {
         width: 40%;
 
         img {
-          width: 300px;
+          width: 250px;
+        }
+      }
+
+      &__img {
+        img {
+          height: 250px;
+        }
+      }
+
+      &__info {
+        display: none;
+      }
+
+      &__info__desktop {
+        display: block;
+        .button {
+          justify-content: flex-start;
+
+          .play {
+            padding-right: 35px;
+
+            button {
+              width: 45px;
+              height: 45px;
+              border-width: 2px;
+            }
+          }
+        }
+        .texte {
+          justify-content: end;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@include large {
+  .films__dydy {
+    .dydy {
+      &__title {
+        img {
+          width: 350px;
         }
       }
 
@@ -521,18 +553,22 @@ main {
 
       &__info__desktop {
         .button {
-          justify-content: center;
-
           .play {
             button {
-              width: 65px;
-              height: 65px;
-              border-width: 2px;
+              width: 75px;
+              height: 75px;
+            }
+            h2 {
+              font-size: 20px;
             }
           }
+
+          h2 {
+            font-size: 20px;
+          }
         }
+
         .texte {
-          justify-content: end;
           font-size: 22px;
         }
       }

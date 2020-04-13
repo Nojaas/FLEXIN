@@ -104,6 +104,7 @@ main {
           flex-direction: row;
           justify-content: center;
           align-items: center;
+
           button {
             display: flex;
             justify-content: center;
@@ -373,10 +374,9 @@ main {
       align-items: center;
       flex-flow: row;
       width: auto;
-      @include medium {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
+
+      padding-left: 15px;
+      padding-right: 15px;
 
       .thonosmovie {
         &__title {
@@ -406,11 +406,8 @@ main {
             justify-content: flex-start;
 
             .play {
-              padding-right: 50px;
+              padding-right: 35px;
 
-              @include medium {
-                padding-right: 35px;
-              }
               button {
                 width: 45px;
                 height: 45px;
@@ -420,11 +417,7 @@ main {
           }
           .texte {
             justify-content: end;
-            font-size: 20px;
-
-            @include medium {
-              font-size: 18px;
-            }
+            font-size: 18px;
           }
         }
       }
@@ -436,13 +429,13 @@ main {
       .thonosmovie {
         &__title {
           img {
-            width: 400px;
+            width: 350px;
           }
         }
 
         &__img {
           img {
-            height: 350px;
+            height: 300px;
           }
         }
 
@@ -464,7 +457,7 @@ main {
           }
 
           .texte {
-            font-size: 26px;
+            font-size: 22px;
           }
         }
       }
