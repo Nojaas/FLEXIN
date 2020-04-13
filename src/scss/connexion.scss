@@ -7,7 +7,7 @@
 }
 
 .Account {
-  width: 320px;
+  width: 350px;
   z-index: 100;
   border: solid 1.5px $Secondary-color;
   padding: 20px;
@@ -57,7 +57,7 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 340px;
 }
 
 .Account__password {
@@ -140,3 +140,12 @@
   transform: rotate(45deg);
 }
 
+@media(max-width:500px) {
+  .Account {
+    width: 260px;
+  }
+  .Account__plus {
+    width: 260px;
+  }
+  
+}
