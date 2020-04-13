@@ -8,6 +8,7 @@ main {
     height: auto;
     position: relative;
     overflow: hidden;
+    width: fit-content;
 
     @include medium {
       height: auto;
