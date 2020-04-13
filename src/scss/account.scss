@@ -1,0 +1,84 @@
+.body--account {
+  background-color: rgba(244, 244, 244, 1);
+}
+
+.header--account {
+  background-color: $Primary-color;
+}
+
+.main__account {
+  display: flex;
+  background-color: rgba(244, 244, 244, 1);
+  width: 100vw;
+  height: 100vh;
+
+}
+.account {
+  justify-content: center;
+  background-color: rgba(244, 244, 244, 1);
+  margin: auto;
+  width: 400px;
+  z-index: 200;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-family: $Primary-font;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+
+  &__personnal {
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(202, 204, 207, 1);
+    color: black;
+    font-family: $Primary-font;
+    font-size: 22px;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(202, 204, 207, 1);
+    color: black;
+    font-family: $Primary-font;
+  }
+
+  &__mail {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(202, 204, 207, 1);
+    color: black;
+    font-family: $Primary-font;
+  }
+
+  &__password {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(202, 204, 207, 1);
+    color: black;
+    font-family: $Primary-font;
+  }
+
+
+
+
+}
+
+.account--orange {
+  color: $Secondary-color;
+  cursor: pointer;
+}
+
+@media(max-width:500px) {
+  .account {
+    width: 290px;
+  }
+}
