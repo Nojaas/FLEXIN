@@ -1,0 +1,151 @@
+.body--signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Signup {
+  width: 400px;
+  z-index: 100;
+  border: solid 1.5px $Secondary-color;
+  padding: 20px;
+  z-index: 200;
+}
+
+.Signup__logo{
+  padding: 20px;
+  font-size: 65px;
+  font-weight: normal;
+  text-align: center;
+  color: $Secondary-color;
+}
+
+.Signup__text {
+  font-family: $Primary-font;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.Signup__fill {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.Signup input[type="submit"] {
+  background: #feba12;
+  border-color: transparent;
+  color: $Primary-color;
+  cursor: pointer;
+}
+
+.Signup input[type="submit"]:hover {
+  background: #e09226;
+  color: $Primary-color;
+}
+
+.Signup__plus {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 390px;
+}
+
+.Signup__password {
+  text-decoration: none;
+  color: white;
+  font-family: $Primary-font;
+  font-size: 16px;
+}
+
+.remember {
+  font-family: $Primary-font;
+  font-size: 16px;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -3.5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: $Secondary-color;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media(max-width:500px) {
+  .Signup {
+    width: 260px;
+  }
+  .Signup__plus {
+    width: 260px;
+  }
+  
+}
