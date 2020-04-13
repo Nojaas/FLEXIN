@@ -99,6 +99,10 @@ main {
           bottom: 160px;
         }
 
+        @include Xlarge {
+          bottom: 350px;
+        }
+
         .play {
           display: flex;
           flex-direction: row;
@@ -191,7 +195,10 @@ main {
           font-family: $Secondary-font;
           font-size: 16px;
           @include large {
-            font-size: 24px;
+            font-size: 18px;
+          }
+          @include Xlarge {
+            font-size: 22px;
           }
         }
       }
@@ -238,7 +245,10 @@ main {
           font-size: 16px;
 
           @include large {
-            font-size: 24px;
+            font-size: 18px;
+          }
+          @include Xlarge {
+            font-size: 22px;
           }
         }
       }
@@ -479,7 +489,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .top10__img {
@@ -521,7 +534,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .tendency__img {
@@ -553,7 +569,10 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
+    }
+    @include Xlarge {
+      font-size: 22px;
     }
   }
   .originals__img {
@@ -589,7 +608,7 @@ main {
     font-size: 16px;
 
     @include large {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
   .mustsee__img {
