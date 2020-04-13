@@ -7,6 +7,7 @@ main {
     display: flex;
     height: auto;
     position: relative;
+    overflow: hidden;
 
     @include medium {
       height: auto;
@@ -34,10 +35,13 @@ main {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
-        overflow: hidden;
 
         @include medium {
           margin-top: 85px;
+        }
+
+        @include large {
+          margin-top: 120px;
         }
 
         h1 {
@@ -52,6 +56,10 @@ main {
 
           @include medium {
             font-size: 75px;
+          }
+
+          @include large {
+            font-size: 125px;
           }
 
           -webkit-text-stroke: 1px white;
@@ -85,6 +93,9 @@ main {
         @include medium {
           bottom: 140px;
         }
+        @include large {
+          bottom: 160px;
+        }
 
         .play {
           display: flex;
@@ -108,6 +119,12 @@ main {
               height: 60px;
             }
 
+            @include large {
+              border: 2.5px solid $Secondary-color;
+              width: 80px;
+              height: 80px;
+            }
+
             img {
               transform: translateX(2px);
               color: white;
@@ -115,6 +132,10 @@ main {
 
               @include medium {
                 width: 10px;
+              }
+
+              @include large {
+                width: 14px;
               }
             }
           }
