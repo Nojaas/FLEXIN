@@ -7,14 +7,15 @@
 }
 
 .Signup {
+  position: absolute;
+  background-color: $Primary-color;
   width: 400px;
   z-index: 100;
   border: solid 1.5px $Secondary-color;
   padding: 20px;
-  z-index: 200;
 }
 
-.Signup__logo{
+.Signup__logo {
   padding: 20px;
   font-size: 65px;
   font-weight: normal;
@@ -140,12 +141,11 @@
   transform: rotate(45deg);
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
   .Signup {
     width: 260px;
   }
   .Signup__plus {
     width: 260px;
   }
-  
 }
