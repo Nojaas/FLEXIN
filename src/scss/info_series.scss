@@ -1,3 +1,6 @@
+
+/*  ---- Section présentation ---- */
+
 .infoS__presentation {
   display: flex;
   height: 300px;
@@ -62,34 +65,75 @@
   }
 }
 
+/*  ---- Section trailer ---- */
+
 .infoS__trailer {
-	margin-left: 10px;
+	margin-left: 24px;
 	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
 	.trailer{
 		&__title{
-			font-size: 16px;
+			h2 {
+				font-size: 25px;
+				margin-bottom: 7px;
+			}
 		}
 		&__img{
 			display: flex;
 			justify-content: center;
 			img{
 				width: 300px;
+				@include medium {
+					width: 400px;
+				}
+				@include large {
+					width: 500px;
+				}
+			}
+			@include medium {
+				display: flex;
+				justify-content: start;
+			}
+			@include large {
+				display: flex;
+				justify-content: start;
 			}
 		}
 	}
 	
 }
+
+/*  ---- Section saison ---- */
+
 .infoS__saison {
-	margin-left: 10px;
+	margin-left: 24px;
 	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
 	.saison {
 		&__texte{
 			display: flex;
 			flex-wrap: nowrap;
+			overflow-x: auto;
 			
 			h2 {
 				font-size: 16px;
+				margin-bottom: 11px;
 				padding-right: 12px;
+				display: flex;
+				flex-wrap: nowrap;
+				@include large {
+					font-size: 25px;
+				}
 			}
 		}
 		&__img {
@@ -100,162 +144,341 @@
 			img {
 				width: 173px;
 				padding-right: 2px;
+				@include medium {
+					width: 220px;
+				}
+				@include large {
+					width: 325px;
+				}
 			}
 		}
 	}
 }
 
-.infonS__overview {
-	margin-left: 10px;
+/*  ---- Section overview ---- */
+
+.infoS__overview {
+	margin-left: 24px;
 	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
 	.overview{
 		&__title{
 			h2{
 				font-size: 25px;
+				margin-bottom: 16px;
 			}
 		}
 		&__text {
+			width: 290px;
+			height: 180;
+			@include medium {
+				height: 70px;
+				width: 500px;
+			}
+			@include large {
+				height: 80px;
+				width: 643px;
+			}
 			p{
 			font-size: 14px;
+			@include large {
+				font-size: 18px;
+			}
 			}
 		}
 	}
 }
 
+/*  ---- Section about ---- */
+
 .infoS__about{
-	margin-left: 10px;
+	margin-left: 24px;
 	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
 	.about{
 		&__title {
 			h2{
 				font-size: 25px;
+				margin-bottom: 16px;
 			}
 		}
 	}
 }
+
+/*  ---- Section cast ---- */
 
 .infoS__cast{
-	margin-left: 10px;
+	margin-left: 24px;
 	margin-bottom: 20px;
-
-	.cast {
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
+	.cast{
 		&__title{
 			h2 {
-			font-size: 25px;
+				font-size: 25px;
+				margin-bottom: 16px;
 			}
 		}
-		&__travis{
+	}
+	.cast__actor{
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 5px;
+		.cast__travis{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 30px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.travis{
-			&__text{
-				h2{
-					font-size: 34px;
+			.travis{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
-		&__alexander{
+		.cast__alexander{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.alexander{
-			&__text{
-				h2{
-					font-size: 34px;
+			.alexander{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
-		&__alex{
+		.cast__alex{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.alex{
-			&__text{
-				h2{
-					font-size: 34px;
+			.alex{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
-		&__katheryn{
+		.cast__katheryn{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.akatheryn{
-			&__text{
-				h2{
-					font-size: 34px;
+			.katheryn{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
-		&__clive{
+		.cast__clive{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.clive{
-			&__text{
-				h2{
-					font-size: 34px;
+			.clive{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
-		&__gustave{
+		.cast__gustaf{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.gustave{
-			&__text{
-				h2{
-					font-size: 34px;
+			.gustaf{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
-		&__george{
+		.cast__george{
 			display:flex;
 			flex-wrap: nowrap;
-			img{
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
 				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
 			}
-		}
-		.george{
-			&__text{
-				h2{
-					font-size: 34px;
+			.george{
+				&__text {
+					h2 {
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						@include large {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
 	}
 }
 
-.infoS__kind{
+
+/*  ---- Section kind ---- */
+
+.infoS__kind {
 	margin-left: 10px;
 	margin-bottom: 20px;
-
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
 	.kind {
 		&__title {
-			font-size: 25px;
+			h2 {
+				font-size: 25px;
+				margin-bottom: 16px;
+				margin-left: 10px;
+			}
 		}
-		&__img{
+		&__img {
+			margin-left: 10px;
 			img {
 				width: 118px;
+				margin-right: 12px;
+				@include large {
+					width: 150px;
+				}
 			}
 		}
 	}
