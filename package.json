@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "account": "parcel src/screens/account.html",
-    "connexion": "parcel src/screens/inscriptiondesign.html",
-    "landing": "parcel src/screens/landing.html",
-    "player": "parcel src/player/index.html",
     "dev": "parcel src/screens/info_films.html",
-    "build": "parcel build src/screens/landing.html"
+    "build": "parcel build src/screens/home.html"
   },
   "repository": {
     "type": "git",
