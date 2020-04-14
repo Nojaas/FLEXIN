@@ -346,6 +346,9 @@
 				font-size: 25px;
 				margin-bottom: 16px;
 				font-family: "Rambla";
+				@include large {
+					font-size: 35px;
+				}
 			}
 		}
 		&__text {
@@ -388,6 +391,9 @@
 				font-size: 25px;
 				margin-bottom: 16px;
 				font-family: "Rambla";
+				@include large {
+					font-size: 35px;
+				}
 			}
 		}
 	}
@@ -410,6 +416,9 @@
 				font-size: 25px;
 				margin-bottom: 16px;
 				font-family: "Rambla";
+				@include large {
+					font-size: 35px;
+				}
 			}
 		}
 	}
@@ -664,6 +673,9 @@
 				margin-bottom: 16px;
 				margin-left: 10px;
 				font-family: "Rambla";
+				@include large {
+					font-size: 35px;
+				}
 			}
 		}
 		&__img {

@@ -1,0 +1,622 @@
+/*  ---- Section présentation ---- */
+.bloc {
+	border: 1px solid #FFFFFF;
+	height: 44%;
+	top: 30px;
+	left: 24px;
+	right: 24px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	@include medium {
+		height: 45%;
+		top: 30px;
+		left: 35px;
+		right: 35px;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+	}
+	@include large {
+		height: 60%;
+		top: 40px;
+		left: 65px;
+		right: 65px;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+	}
+  }
+
+
+.infoF__presentation {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+
+  @include small {
+    height: 400px;
+  }
+
+  @include medium {
+    height: auto;
+  }
+
+  .presentation {
+    &__img {
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @include medium {
+          height: auto;
+        }
+      }
+    }
+	&__title {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        margin-top: 85px;
+        display: flex;
+        flex-direction: row;
+
+        @include medium {
+          margin-top: 85px;
+        }
+
+        @include large {
+          margin-top: 120px;
+        }
+
+        h1 {
+          font-size: 35px;
+          text-transform: uppercase;
+          font-family: "ReemKufi";
+          color: transparent;
+
+          @include small {
+            font-size: 45px;
+          }
+
+          @include medium {
+            font-size: 75px;
+          }
+
+          @include large {
+            font-size: 125px;
+          }
+
+          -webkit-text-stroke: 1px white;
+          -moz-text-stroke: 1px white;
+          white-space: nowrap;
+          animation: play 10s linear infinite;
+
+          @keyframes play {
+            100% {
+              transform: translateX(-40%);
+            }
+          }
+        }
+	  }
+	  &__button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        bottom: 30px;
+        right: 25px;
+
+        @include small {
+          bottom: 50px;
+        }
+
+        @include medium {
+          bottom: 140px;
+        }
+        @include large {
+          bottom: 160px;
+        }
+
+        @include Xlarge {
+          bottom: 350px;
+        }
+
+        .play {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: transparent;
+            border-radius: 50px;
+            width: 42px;
+            height: 42px;
+            border: $Secondary-color 1.5px solid;
+            margin-right: 20px;
+            @include medium {
+              margin-right: 8px;
+              width: 60px;
+              height: 60px;
+            }
+
+            @include large {
+              border: 2.5px solid $Secondary-color;
+              width: 80px;
+              height: 80px;
+            }
+
+            img {
+              transform: translateX(2px);
+              color: white;
+              width: 8px;
+
+              @include medium {
+                width: 10px;
+              }
+
+              @include large {
+                width: 14px;
+              }
+            }
+          }
+          h3 {
+            display: none;
+
+            @include medium {
+              display: block;
+              margin-right: 40px;
+              font-size: 18px;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .info {
+          button {
+            border: white solid 0.5px;
+            font-size: 14px;
+            background-color: transparent;
+            color: white;
+            text-transform: uppercase;
+            padding: 3px 10px;
+
+            @include medium {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+  }
+}
+
+/*  ---- Section trailer ---- */
+
+.infoF__trailer {
+	margin-left: 24px;
+	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
+	.trailer{
+		&__title{
+			h2 {
+				font-size: 25px;
+				margin-bottom: 7px;
+                font-family: "Rambla";
+                @include large {
+					font-size: 35px;
+				}
+			}
+		}
+		&__img{
+			display: flex;
+			justify-content: center;
+			img{
+				width: 300px;
+				@include medium {
+					width: 400px;
+				}
+				@include large {
+					width: 500px;
+				}
+			}
+			@include medium {
+				display: flex;
+				justify-content: start;
+			}
+			@include large {
+				display: flex;
+				justify-content: start;
+			}
+		}
+	}
+	
+}
+
+/*  ---- Section together ---- */
+
+.infoF__together {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+/*  ---- Section overview ---- */
+
+.infoF__overview {
+	margin-left: 24px;
+	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
+	.overview{
+		&__title{
+			h2{
+				font-size: 25px;
+				margin-bottom: 16px;
+                font-family: "Rambla";
+                @include large {
+					font-size: 35px;
+				}
+			}
+		}
+		&__text {
+			width: 290px;
+			height: 180;
+			font-family: "Rambla";
+			@include medium {
+				height: 70px;
+				width: 500px;
+			}
+			@include large {
+				height: 80px;
+				width: 643px;
+			}
+			p{
+			font-size: 14px;
+			font-family: "Rambla";
+			@include large {
+				font-size: 18px;
+			}
+			}
+		}
+	}
+}
+
+/*  ---- Section about ---- */
+
+.infoF__about{
+    margin-left: 24px;
+    margin-right: 60px;
+	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
+	.about{
+		&__title {
+			h2{
+				font-size: 25px;
+				margin-bottom: 16px;
+                font-family: "Rambla";
+                @include large {
+					font-size: 35px;
+				}
+			}
+		}
+	}
+}
+
+/*  ---- Section cast ---- */
+
+.infoF__cast{
+	margin-left: 24px;
+	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
+	.cast{
+		&__title{
+			h2 {
+				font-size: 25px;
+				margin-bottom: 16px;
+                font-family: "Rambla";
+                @include large {
+					font-size: 35px;
+				}
+			}
+		}
+	}
+	.cast__actor{
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 5px;
+		.cast__mahershala{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 30px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.mahershala{
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+							font-family: "Rambla";
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.cast__trevante{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.trevante{
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.cast__andre{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.andre{
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.cast__naomie{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.naomie{
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.cast__janelle{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.janelle{
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.cast__ashton{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.ashton{
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		.cast__jharrel{
+			display:flex;
+			flex-wrap: nowrap;
+			margin-right: 10px;
+			margin-bottom: 16px;
+			img {
+				width:42px;
+				margin-right: 6px;
+				@include large {
+					width: 65px;
+				}
+			}
+			.jharrel
+				&__text {
+					h2 {
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+					p {
+						color:orange;
+						font-size: 12px;
+						font-family: "Rambla";
+						@include large {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+/*  ---- Section kind ---- */
+
+.infoF__kind {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	@include medium {
+		margin-left: 60px;
+	}
+	@include large {
+		margin-left: 95px;
+	}
+	.kind {
+		&__title {
+			h2 {
+				font-size: 25px;
+				margin-bottom: 16px;
+				margin-left: 10px;
+                font-family: "Rambla";
+                @include large {
+					font-size: 35px;
+				}
+			}
+		}
+		&__img {
+			margin-left: 10px;
+			img {
+				width: 118px;
+				margin-right: 12px;
+				@include large {
+					width: 150px;
+				}
+			}
+		}
+	}
+}
