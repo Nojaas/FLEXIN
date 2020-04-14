@@ -61,3 +61,202 @@
     }
   }
 }
+
+.infoS__trailer {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	.trailer{
+		&__title{
+			font-size: 16px;
+		}
+		&__img{
+			display: flex;
+			justify-content: center;
+			img{
+				width: 300px;
+			}
+		}
+	}
+	
+}
+.infoS__saison {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	.saison {
+		&__texte{
+			display: flex;
+			flex-wrap: nowrap;
+			
+			h2 {
+				font-size: 16px;
+				padding-right: 12px;
+			}
+		}
+		&__img {
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+
+			img {
+				width: 173px;
+				padding-right: 2px;
+			}
+		}
+	}
+}
+
+.infonS__overview {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	.overview{
+		&__title{
+			h2{
+				font-size: 25px;
+			}
+		}
+		&__text {
+			p{
+			font-size: 14px;
+			}
+		}
+	}
+}
+
+.infoS__about{
+	margin-left: 10px;
+	margin-bottom: 20px;
+	.about{
+		&__title {
+			h2{
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+.infoS__cast{
+	margin-left: 10px;
+	margin-bottom: 20px;
+
+	.cast {
+		&__title{
+			h2 {
+			font-size: 25px;
+			}
+		}
+		&__travis{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.travis{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+		&__alexander{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.alexander{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+		&__alex{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.alex{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+		&__katheryn{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.akatheryn{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+		&__clive{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.clive{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+		&__gustave{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.gustave{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+		&__george{
+			display:flex;
+			flex-wrap: nowrap;
+			img{
+				width:42px;
+			}
+		}
+		.george{
+			&__text{
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+	}
+}
+
+.infoS__kind{
+	margin-left: 10px;
+	margin-bottom: 20px;
+
+	.kind {
+		&__title {
+			font-size: 25px;
+		}
+		&__img{
+			img {
+				width: 118px;
+			}
+		}
+	}
+}
