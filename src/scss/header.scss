@@ -1,4 +1,4 @@
-@include large {
+
   header {
     width: 100%;
     position: fixed;
@@ -84,15 +84,14 @@
       }
     }
   }
+
+header.sticky {
+  background-color:$Primary-color;
+  transition: ease-in-out 0.4s;
 }
 
 @media(max-width: 1025px) {
   header {
     display: none;
   }
-}
-
-header.sticky {
-  background-color:$Primary-color;
-  transition: ease-in-out 0.4s;
 }
