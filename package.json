@@ -9,7 +9,7 @@
     "landing": "parcel src/screens/landing.html",
     "player": "parcel src/player/index.html",
     "dev": "parcel src/screens/home.html",
-    "build": "parcel build src/screens/landing.html"
+    "build": "parcel build src/screens/home.html"
   },
   "repository": {
     "type": "git",
