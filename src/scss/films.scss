@@ -223,7 +223,7 @@ main {
     }
   }
 
-  /*  ---- Section new ---- */
+  /*  ---- Section drama ---- */
 
   .films__drama {
     display: flex;
@@ -261,6 +261,9 @@ main {
           height: 170px;
           flex: 0 0 auto;
           padding-right: 10px;
+          @include large {
+            height: 200px;
+          }
         }
       }
     }
@@ -328,74 +331,13 @@ main {
         height: 170px;
         padding-right: 10px;
         flex: 0 0 auto;
+        @include large {
+          height: 200px;
+        }
       }
     }
   }
 
-  .films__criminal {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    .criminal__title {
-      margin-bottom: 10px;
-      color: white;
-
-      font-family: "Rambla";
-      font-weight: bold;
-      font-size: 16px;
-
-      @include large {
-        font-size: 18px;
-      }
-      @include Xlarge {
-        font-size: 22px;
-      }
-    }
-    .criminal__movies {
-      display: flex;
-      flex-wrap: nowrap;
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      img {
-        height: 170px;
-        padding-right: 10px;
-        flex: 0 0 auto;
-      }
-    }
-  }
-
-  .films__sf {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    .sf__title {
-      margin-bottom: 10px;
-      color: white;
-
-      font-family: "Rambla";
-      font-weight: bold;
-      font-size: 16px;
-
-      @include large {
-        font-size: 18px;
-      }
-      @include Xlarge {
-        font-size: 22px;
-      }
-    }
-    .sf__movies {
-      display: flex;
-      flex-wrap: nowrap;
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      img {
-        height: 170px;
-        padding-right: 10px;
-        flex: 0 0 auto;
-      }
-    }
-  }
-}
 
 .films__dydy {
   display: flex;
@@ -597,37 +539,6 @@ main {
   }
 }
 
-.films__action {
-  margin-left: 10px;
-  margin-bottom: 20px;
-  .action__title {
-    margin-bottom: 10px;
-    color: white;
-
-    font-family: "Rambla";
-    font-weight: bold;
-    font-size: 16px;
-
-    @include large {
-      font-size: 18px;
-    }
-    @include Xlarge {
-      font-size: 22px;
-    }
-  }
-  .action__movies {
-    display: flex;
-    flex-wrap: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    img {
-      height: 170px;
-      padding-right: 10px;
-      flex: 0 0 auto;
-    }
-  }
-}
 
 .films__sg {
   margin-left: 10px;
@@ -657,38 +568,9 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
-    }
-  }
-}
-
-.films__family {
-  margin-left: 10px;
-  margin-bottom: 20px;
-  .family__title {
-    margin-bottom: 10px;
-    color: white;
-
-    font-family: "Rambla";
-    font-weight: bold;
-    font-size: 16px;
-
-    @include large {
-      font-size: 18px;
-    }
-    @include Xlarge {
-      font-size: 22px;
-    }
-  }
-  .family__movies {
-    display: flex;
-    flex-wrap: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    img {
-      height: 170px;
-      padding-right: 10px;
-      flex: 0 0 auto;
+      @include large {
+        height: 200px;
+      }
     }
   }
 }
@@ -721,38 +603,34 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
+      @include large {
+        height: 200px;
+      }
     }
   }
 }
 
-.films__kids {
-  margin-left: 10px;
-  margin-bottom: 20px;
-  .kids__title {
-    margin-bottom: 10px;
-    color: white;
+/*  ---- Section footer ---- */
 
-    font-family: "Rambla";
-    font-weight: bold;
-    font-size: 16px;
-
-    @include large {
-      font-size: 18px;
-    }
-    @include Xlarge {
-      font-size: 22px;
+footer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: auto;
+  padding-top: 30px;
+  .footer__column {
+    margin: auto;
+    width: fit-content;
+    &__first,
+    &__second,
+    &__third {
+      display: flex;
+      text-decoration: none;
+      color: white;
+      text-align: start;
+      width: fit-content;
+      padding: 0.5em;
+      font-size: 13px;
     }
   }
-  .kids__movies {
-    display: flex;
-    flex-wrap: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    img {
-      height: 170px;
-      padding-right: 10px;
-      flex: 0 0 auto;
-    }
-  }
-}
+}}

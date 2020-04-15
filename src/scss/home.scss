@@ -551,6 +551,9 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
+      @include large {
+        height: 200px;
+      }
     }
   }
 }
@@ -623,6 +626,34 @@ main {
       height: 170px;
       padding-right: 10px;
       flex: 0 0 auto;
+      @include large {
+        height: 200px;
+      }
+    }
+  }
+}
+
+/*  ---- Section footer ---- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: auto;
+  padding-top: 30px;
+  .footer__column {
+    margin: auto;
+    width: fit-content;
+    &__first,
+    &__second,
+    &__third {
+      display: flex;
+      text-decoration: none;
+      color: white;
+      text-align: start;
+      width: fit-content;
+      padding: 0.5em;
+      font-size: 13px;
     }
   }
 }
